@@ -1,0 +1,9 @@
+services:
+      app:
+         build: .
+         ports:
+              - 8080:5000
+         volumes:
+              - ./main.py:/app/main.py
+volumes:
+     main:
